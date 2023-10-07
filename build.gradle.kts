@@ -18,7 +18,9 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-}
+    implementation("org.litote.kmongo:kmongo:4.8.0")
+    implementation("com.ToxicBakery.library.bcrypt:bcrypt:1.0.9")
+    implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")}
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "11"
